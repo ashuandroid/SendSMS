@@ -21,7 +21,7 @@ public class ReadSMS extends AppCompatActivity {
 
         lViewSMS = findViewById(R.id.listViewSMS);
 
-        if(fetchInbox()!=null) {
+        if (fetchInbox() != null) {
 
             ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, fetchInbox());
             lViewSMS.setAdapter(adapter);
@@ -31,15 +31,15 @@ public class ReadSMS extends AppCompatActivity {
     public ArrayList fetchInbox() {
         ArrayList sms = new ArrayList();
         Uri uriSms = Uri.parse("content://sms/inbox");
-        Cursor cursor = getContentResolver().query(uriSms, new String[]{"_id", "address", "date", "body"},null,null,null);
+        Cursor cursor = getContentResolver().query(uriSms, new String[]{"_id", "address", "date", "body"}, null, null, null);
         cursor.moveToFirst();
-        while  (cursor.moveToNext()) {
+        while (cursor.moveToNext()) {
 
             String address = cursor.getString(1);
             String body = cursor.getString(3);
-            System.out.println("======&gt; Mobile number =&gt; "+address);
-            System.out.println("=====&gt; SMS Text =&gt; "+body);
-            sms.add("Address=&gt; "+address+"n SMS =&gt; "+body);
+            System.out.println("======&gt; Mobile number =&gt; " + address);
+            System.out.println("=====&gt; SMS Text =&gt; " + body);
+            sms.add("Address=&gt; " + address + "n SMS =&gt; " + body);
         }
         return sms;
 

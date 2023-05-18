@@ -18,45 +18,45 @@
         android:textStyle="bold" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Read Inbox Messages"
         android:id="@+id/btnReadSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"/>
+        android:text="Read Inbox Messages" />
 
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Call"
         android:id="@+id/btnCall"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"/>
-
-  <!--  <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/switchData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:text="Mobile Data" />-->
+        android:text="Call" />
+
+    <!--  <androidx.appcompat.widget.SwitchCompat
+          android:id="@+id/switchData"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:layout_gravity="center_horizontal"
+          android:text="Mobile Data" />-->
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="All Installed App"
         android:id="@+id/btnInstalledApp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"/>
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Get Location"
-        android:id="@+id/btnLocation"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:text="All Installed App" />
+
+    <Button
+        android:id="@+id/btnLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="Get Location" />
 
     <TextView
         android:id="@+id/textview1"
@@ -71,12 +71,12 @@
 
 
     <Button
+        android:id="@+id/btnSendSMS"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Send SMS"
-        android:id="@+id/btnSendSMS"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:text="Send SMS" />
 
 
 </LinearLayout>

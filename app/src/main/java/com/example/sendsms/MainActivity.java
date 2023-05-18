@@ -7,8 +7,8 @@ import static android.Manifest.permission.READ_PHONE_STATE;
 import static android.Manifest.permission.READ_SMS;
 import static android.Manifest.permission.SEND_SMS;
 
- import androidx.appcompat.app.AppCompatActivity;
- import androidx.core.app.ActivityCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
@@ -24,13 +24,13 @@ import android.os.Build;
 import android.provider.Settings;
 import android.telephony.SmsManager;
 import android.telephony.TelephonyManager;
- import android.view.View;
+import android.view.View;
 import android.widget.Button;
- import android.widget.TextView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
- import java.util.ArrayList;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
     LocationTrack locationTrack;
     TextView tvLocation;
     TextView tvDeviceID;
-
 
 
     @Override
@@ -123,13 +122,13 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 String address = addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
-             //   String city = addresses.get(0).getLocality();
-             //   String state = addresses.get(0).getAdminArea();
-             //   String country = addresses.get(0).getCountryName();
-             //   String postalCode = addresses.get(0).getPostalCode();
-            //    String knownName = addresses.get(0).getFeatureName(); // Only if available else return NULL
+                //String city = addresses.get(0).getLocality();
+                //String state = addresses.get(0).getAdminArea();
+                //String country = addresses.get(0).getCountryName();
+                //String postalCode = addresses.get(0).getPostalCode();
+                //String knownName = addresses.get(0).getFeatureName(); // Only if available else return NULL
 
-                tvLocation.setText("Longitude: " + longitude + "\nLatitude: " + latitude+"\n\nAddress: " + address);
+                tvLocation.setText("Longitude: " + longitude + "\nLatitude: " + latitude + "\n\nAddress: " + address);
 
 
                 //Toast.makeText(getApplicationContext(), "Longitude:" + Double.toString(longitude) + "\nLatitude:" + Double.toString(latitude), Toast.LENGTH_SHORT).show();
