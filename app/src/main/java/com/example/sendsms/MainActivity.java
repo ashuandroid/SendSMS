@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
             if (permissionsToRequest.size() > 0)
                 requestPermissions((String[]) permissionsToRequest.toArray(new String[permissionsToRequest.size()]), ALL_PERMISSIONS_RESULT);
+
         }
 
 
